@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EscapadaVirtual - Ayuda</title>
+  <link rel="stylesheet" href="styles_total.css">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <div class="logo">
+      <img src="imagenes/logo.png" alt="EscapadaVirtual Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="destinos.html">Destinos</a></li>
+        <li><a href="experiencias.html">Experiencias</a></li>
+        <li><a href="contacto.html">Ayudanos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<!-- Sección de Bienvenida -->
+<section class="contacto">
+    <h1>Ayudanos a mejorar nuestras EscapadasVirtuales</h1>
+    <p>¡Gracias por participar en nuestra encuesta sobre viajes virtuales! Tus opiniones son importantes para mejorar nuestra plataforma y proporcionar la mejor experiencia posible. Por favor, tómate un momento para responder las siguientes preguntas:</p>
+
+  <form action = "respuestas.txt" method="get">
+    <fieldset>
+        <legend>Informacion basica:</legend> <br>
+        <strong>a. ¿Has tenido la oportunidad de participar en un viaje virtual anteriormente?</strong><br>
+        <input type="radio" name="viaje_virtual" value="Sí"> Sí<br>
+        <input type="radio" name="viaje_virtual" value="No"> No<br>
+    
+        <strong>b. ¿Qué te motiva a explorar destinos de forma virtual?</strong><br>
+        <textarea name="motivacion" rows="5" cols="40"></textarea>
+    </fieldset>
+
+    <fieldset>
+        <legend>Preferencia de destinos virtuales:</legend>
+        <strong>a. ¿Qué tipo de destinos virtuales prefieres explorar?</strong><br>
+        <input type="checkbox" name="tipo_destino" value="Ciudades"> Ciudades<br>
+        <input type="checkbox" name="tipo_destino" value="Naturaleza"> Naturaleza<br>
+        <input type="checkbox" name="tipo_destino" value="Museos"> Museos<br>
+    
+        <strong>b. ¿Tienes alguna preferencia de continente o región para tus viajes virtuales?</strong><br>
+        <input type="text" name="preferencia_region"><br>
+    
+        <strong>c. ¿Algún país o ciudad específica que te interese para futuros viajes virtuales?</strong><br>
+        <input type="text" name="preferencia_pais_ciudad">
+    </fieldset>
+
+    <fieldset>
+        <legend>Experiencia de usuario:</legend>
+        <strong>a. ¿Qué aspectos valoras más al participar en un viaje virtual?</strong><br>
+        <input type="checkbox" name="aspectos_valorados" value="Calidad de imagen"> Calidad de imagen<br>
+        <input type="checkbox" name="aspectos_valorados" value="Interactividad"> Interactividad<br>
+        <input type="checkbox" name="aspectos_valorados" value="Narración"> Narración<br>
+    
+        <strong>b. ¿Hay alguna sugerencia para mejorar nuestra plataforma de viajes virtuales?</strong><br>
+        <textarea name="sugerencias" rows="5" cols="40"></textarea>
+    </fieldset>
+
+    <fieldset>
+        <legend>Frecuencia y participacion:</legend>
+        <strong>a. ¿Con qué frecuencia te gustaría participar en viajes virtuales?</strong><br>
+        <input type="radio" name="frecuencia" value="Semanalmente"> Semanalmente<br>
+        <input type="radio" name="frecuencia" value="Mensualmente"> Mensualmente<br>
+        <input type="radio" name="frecuencia" value="Ocasionalmente"> Ocasionalmente<br>
+    
+        <strong>b. ¿Qué duración de viaje virtual prefieres?</strong><br>
+        <select name="duracion">
+            <option value="Cortos">Cortos</option>
+            <option value="Medianos">Medianos</option>
+            <option value="Largos">Largos</option>
+        </select><br>
+
+        <strong>c. ¿Te gustaría recibir notificaciones sobre nuevos viajes virtuales?</strong><br>
+            <input type="radio" name="notificaciones" value="Sí"> Sí<br>
+            <input type="radio" name="notificaciones" value="No"> No<br>
+    </fieldset>
+
+    <fieldset>
+       <legend>Interaccion y Actividades:</legend> 
+       <strong>a. ¿Qué tipo de actividades interactivas disfrutarías durante los viajes virtuales?</strong><br>
+       <input type="checkbox" name="actividades_interactivas" value="Cuestionarios"> Cuestionarios<br>
+       <input type="checkbox" name="actividades_interactivas" value="Juegos"> Juegos<br>
+       <input type="checkbox" name="actividades_interactivas" value="Chats con guías"> Chats con guías<br>
+   
+       <strong>b. ¿Qué información adicional te gustaría recibir sobre los destinos virtuales?</strong><br>
+       <textarea name="informacion_adicional" rows="5" cols="40"></textarea>
+    </fieldset>
+
+    <fieldset>
+        <legend>Recomendaciones y Retroalimentacion:</legend>
+        <strong>a. ¿Recomendarías nuestros viajes virtuales a amigos o familiares?</strong><br>
+        <input type="radio" name="recomendacion" value="Sí"> Sí<br>
+        <input type="radio" name="recomendacion" value="No"> No<br>
+
+        <strong>b. ¿Tienes alguna sugerencia o comentario adicional sobre nuestros viajes virtuales?</strong><br>
+        <textarea name="comentarios_adicionales" rows="5" cols="40"></textarea>
+    </fieldset>
+
+    <fieldset>
+        <legend>Informacion Personal:</legend>
+        <strong>a. Edad:</strong> <input type="number" name="edad" min="1" max="120"><br>
+        
+        <strong>b.Género:</strong>
+        <select name="genero">
+            <option value="Masculino">Masculino</option>
+            <option value="Femenino">Femenino</option>
+            <option value="Otro">Otro</option>
+    </select><br>
+
+        <strong>c. País de Residencia: </strong><input type="text" name="pais_residencia"><br>
+    </fieldset>
+</form>
+
+<a href="gracias.html" class="button">Enviar</a>
+
+
+</section>
+
+  <!-- Llamada a la Acción -->
+  <section class="cta">
+    <h2>¿Tienes Dudas sobre tu Escapada Virtual?</h2>
+    <p>Realiza tus consultas ahora para explorar más.</p>
+    <a href="consultas.html" class="button">Realizar Consulta</a>
+    <br>
+    O envianos un correo a <address>escapadavirtual@gmail.com</address>
+</section>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2023 EscapadaVirtual. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
